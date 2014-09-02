@@ -1,49 +1,16 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html >
     <head>
 
         <title>Oto</title>
 
 
+
+
     </head>
-    <body style="padding:0px; margin: 0px; font-family:Arial, Verdana; background-color:#fff;">
-
-        <script src={% static "js/jquery.js" %}></script>
-        <script src={% static "js/bootstrap.min.js" %}></script>
-        <script src={% static "js/jssor.slider.mini.js" %}></script>
-        <script src={% static "js/jquery-1.9.1.min.js" %}</script>
-        <script src={% static "js/jssor.core.js" %}</script>
-        <script src={% static "js/jssor.slider.js" %}></script>
-        <script src={% static "js/jssor.utils.js" %}></script>
-
-
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}"/>
-
-
-
-        <script>
-                    jssor_slider1_starter = function (containerId) {
-                        var options = {
-                            $AutoPlay: false,
-                            $SlideDuration: 800,
-                            $ThumbnailNavigatorOptions: {
-                                $Class: $JssorThumbnailNavigator$,
-                                $ChanceToShow: 2,
-
-                                $ActionMode: 1,
-                                $SpacingX: 8,
-                                $DisplayPieces: 10,
-                                $ParkingPosition: 360
-                            }
-                        };
-
-                        var jssor_slider1 = new $JssorSlider$(containerId, options);
-                    };
-        </script>
-
+    <body >
 
         <nav class="navbar navbar-inverse" role="navigation" style="padding-left:250px;">
         <div class="container-fluid">
@@ -73,7 +40,21 @@
         </div><!-- /.container-fluid -->
         </nav>
 
-        <!-- Jssor Slider Begin -->
+        <script src={% static "js/jquery.js" %}></script>
+        <script src={% static "js/bootstrap.min.js" %}></script>
+        <script src={% static "js/jssor.slider.mini.js" %}></script>
+        <script src={% static "js/jquery-1.9.1.min.js" %}</script>
+        <script src={% static "js/jssor.core.js" %}</script>
+        <script src={% static "js/jssor.slider.js" %}></script>
+        <script src={% static "js/jssor.utils.js" %}></script>
+
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}"/>
+
+
+
+
         <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 456px; background: #24262e; overflow: hidden;">
 
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -136,10 +117,10 @@
             </div>
 
 
-        <!-- Thumbnail Navigator Skin Begin -->
+
         <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 100px; left:0px; bottom: 0px;">
 
-            <!-- Thumbnail Item Skin Begin -->
+
             <style>
                 /* jssor slider thumbnail navigator skin 01 css */
                 /*
@@ -188,17 +169,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Thumbnail Item Skin End -->
+
         </div>
-        <!-- Thumbnail Navigator Skin End -->
+
         <a style="display: none" href="http://localhost:9000/slider.html">javascript</a>
-        <!-- Trigger -->
+
         <script>
             jssor_slider1_starter('slider1_container');
         </script>
     </div>
 
-    <!-- Jssor Slider End -->
+
 
 
 
